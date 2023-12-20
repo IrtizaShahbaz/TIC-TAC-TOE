@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #5D3587;
+}
+body{
+    background-color: #BEADFA;
+    text-align: center;
+    /* overflow: hidden; */
+}
+main{
+    height: 750px;
+}
+.M-heading{
+    font-size: 2.75rem;
+    margin-top: 2.75rem;
+    margin-bottom: 1.75rem;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game{
+    height: 65vmin;
+    width: 65vmin;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+.box{
+    width: 30%;
+    height: 30%;
+    font-size: 3.5rem;
+    font-weight: 500;
+    background-color: #FFFBF5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game button{
+    border-radius: 10px;
+    border: 2px solid #27005D;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    transition: all ease 0.3s;
+}
+.game button:hover{
+    background-color: #fffbf5d3;
+}
+#reset-btn{
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #5D3587;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+#reset-btn:hover{
+    box-shadow: 0 0 0.85rem #5D3587,
+    0 0 1rem #5D3587;
+}
+#reset-btn:active{
+    scale: 0.8;
+}
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hide{
+    display: none;
+}
+#msg{
+    font-size: 2.75rem;
+    margin-top: 2.75rem;
+    margin-bottom: 1.75rem;
+    animation: scaleUp 0.8s ease-in-out infinite alternate;
+}
+@keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+}
+#new-btn{
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #5D3587;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s;
+}
+#new-btn:hover{
+    box-shadow: 0 0 0.85rem #5D3587,
+    0 0 1rem #5D3587;
+}
+#new-btn:active{
+    scale: 0.8;
+}
+#msg {
+    color: #FFFBF5;
+    font-size: 4rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
